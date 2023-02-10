@@ -1,4 +1,3 @@
-```bash
 FROM centos:7
 #install common tools
 RUN yum update -y && yum install -y wget git telnet vim curl iproute cron gettext gcc gcc-c++ automake zlib zlib-devel openssl openssl-devel pcre pcre-devel net-tools bzip2-devel libffi-devel && yum clean all
@@ -11,4 +10,3 @@ RUN cd chatgpt-on-wechat
 #start it
 WORKDIR chatgpt-on-wechat
 ENTRYPOINT ["python3.9","app.py"]
-```
