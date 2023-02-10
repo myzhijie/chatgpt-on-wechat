@@ -13,8 +13,15 @@
   "character_desc": "你是ChatGPT, 一个由OpenAI训练的大型语言模型, 你乐于回答人们的各种问题。"  # 人格描述
 }
 ```
-运行方式：docker run -d -v 你的配置文件路径:/root/chatgpt-on-wechat/config.json myzhijie/chatgpt-on-wechat
-随后根据上一步打印的ID，执行docker logs -f ID，会展示出来登录二维码，微信扫码即可。
+运行方式：
+```bash
+docker run -d -v 你的配置文件路径:/root/chatgpt-on-wechat/config.json myzhijie/chatgpt-on-wechat
+```
+随后根据上一步打印的ID，执行：
+```bash
+docker logs -f 打印的ID
+```
+会展示出来登录二维码，微信扫码即可。
 
 
 
