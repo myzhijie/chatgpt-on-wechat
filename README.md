@@ -15,7 +15,7 @@
 ```
 运行方式：
 ```bash
-docker run -d -v 你的配置文件路径:/root/chatgpt-on-wechat/config.json myzhijie/chatgpt-on-wechat
+docker run -d -v 你的配置文件路径:/chatgpt-on-wechat/config.json myzhijie/chatgpt-on-wechat
 ```
 随后根据上一步打印的ID，执行：
 ```bash
